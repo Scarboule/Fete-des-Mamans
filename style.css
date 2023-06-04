@@ -53,6 +53,7 @@ p,h1{display: none;}
     color: #fff;
     width: 600px;
     font-size: 20px;
+    z-index: 5;
   
 }
 
@@ -117,12 +118,14 @@ p,h1{display: none;}
     top: 80%;
     left: 0;
     margin-left: 10px;
+    z-index: 10;
     }
     #nextBtn{
         position: absolute;
     top: 80%;
     left: 300px;
     margin-left: 10px;
+    z-index: 10;
     }
     
   }
