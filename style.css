@@ -115,14 +115,14 @@ p,h1{display: none;}
     }
     #previousBtn{
         position: absolute;
-    top: 80%;
+    top: 90%;
     left: 0;
     margin-left: 10px;
     z-index: 10;
     }
     #nextBtn{
         position: absolute;
-    top: 80%;
+    top: 90%;
     left: 300px;
     margin-left: 10px;
     z-index: 10;
