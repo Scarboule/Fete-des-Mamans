@@ -98,5 +98,33 @@ p,h1{display: none;}
       opacity: 1;
     }
   }
-  
+
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #text{
+        position: absolute;
+        top: 25%;
+        margin: 20%;
+        color: #fff;
+        width: 350px;
+        font-size: 18px;
+    
+    }
+    #previousBtn{
+        position: absolute;
+    top: 80%;
+    left: 0;
+    margin-left: 10px;
+    }
+    #nextBtn{
+        position: absolute;
+    top: 80%;
+    left: 300px;
+    margin-left: 10px;
+    }
+    
+  }
+
 
