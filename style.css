@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+html {
+    background: #222;
+    height: 100%;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  #nextBtn{
+    color: #fff;
+    stroke:#FFF;
+    fill: none;
+    stroke-width: 4;
+    display: none;
+    cursor: pointer;
+    transform: rotate(270deg);
+
+  }
+  #previousBtn{
+    color: #fff;
+    stroke:#FFF;
+    stroke-width: 4;
+    fill: none;
+    display: none;
+    cursor: pointer;
+    transform: rotate(90deg);
+
+  }
+  #previousBtn:hover, #nextBtn:hover{
+    fill: #fff;
+  }
+  #previousBtn:active, #nextBtn:active{
+    fill: #F91056;
+    stroke: #F91056;
+  }
+h1{padding-bottom: 10px}
+p,h1{display: none;}
+
+#text{
+    position: absolute;
+    top: -9%;
+    margin: 20%;
+    color: #fff;
+    width: 600px;
+    font-size: 20px;
+  
+}
+
+  body {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #icon-heart{
+    cursor: pointer;
+    transition: width 3s ease;
+  }
+
+  #heart-container {
+    display: flex;
+  }
+
+  #heart-path {
+    fill: #F91056;
+    stroke:#F91056;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: draw-heart 10s linear infinite;
+  }
+
+  @keyframes draw-heart {
+    0% {
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dashoffset: 500;
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+
